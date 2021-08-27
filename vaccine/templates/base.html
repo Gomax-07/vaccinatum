@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="theme-color" content="#343A40"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 	<meta name="description" content="covid-19 infection statistics for Kenya">
+  	<meta name="keywords" content="virus,corona,covid 19,disease,medic,fringe,tech,fringe tech ict consultancy,ftic,#ftic,r3klaw,david rashid,kitale,kenya">
+  	<meta name="author" content="r3klaw">
+  <meta name="msapplication-config" content="r3klaw.github.io/browserconfig.xml">
+<link rel="href{{ url_for('static', filename='css/main.css')}}"</link>
+<link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+<link rel="icon" sizes="192x192" href="static/images/icon-192x192.png">
+<link rel='manifest' href="{{url_for('static',filename='manifest.json')}}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+    integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">COVID-19 INFECTION IN KENYA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                   <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="{{url_for('Global')}}">Global</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="{{url_for('About')}}">About</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="{{url_for('Contact')}}">Contact</a>
+               </li>
+           </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+    integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+</script>
+{% block body %}{% endblock %}
+<body/>
+<footer class="sticky-footer bg-inverse">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>
+                    <div class="copyright">
+                        &copy;
+                        <script>document.write(new Date().getFullYear()); </script><strong><a
+                            href="https://r3klaw.github.io/"> FTIC</a></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                    
+                        Designed with <i class="fa fa-heart" style="color:red;"></i> by <a
+                            href="https://r3klaw.github.io/r3klaw-resume/">r3klaw</a>
+                    </div>
+                </span>
+            </div>
+        </div>
+{%block footer %}{% endblock %}
