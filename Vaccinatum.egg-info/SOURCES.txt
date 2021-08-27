@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+Vaccinatum.egg-info/PKG-INFO
+Vaccinatum.egg-info/SOURCES.txt
+Vaccinatum.egg-info/dependency_links.txt
+Vaccinatum.egg-info/not-zip-safe
+Vaccinatum.egg-info/requires.txt
+Vaccinatum.egg-info/top_level.txt
+vaccine/__init__.py
+vaccine/api.py
+vaccine/auth.py
+vaccine/db.py
+vaccine/request.py
+vaccine/vaccine.py
